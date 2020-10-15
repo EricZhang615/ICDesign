@@ -6,6 +6,7 @@ reg clk;
 reg rst;
 
 wire clk_m;
+wire clk_level;
 
 wire m_align;
 wire [2:0] A_reg;
@@ -20,13 +21,14 @@ DigitalQAMModulation MainComp(
   .clk(clk),
   .rst(rst),
   .clk_m(clk_m),
+  .clk_level(clk_level),
   .m_align(m_align),
   .A_reg(A_reg),
   .SigI(SigI),
   .SigQ(SigQ),
   .Siga(Siga),
   .Sigb(Sigb)
-  
+
   );
 
 

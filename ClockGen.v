@@ -1,7 +1,7 @@
 module ClockGen (
   input clk,
   output wire clk_m,
-  output wire clk_level,
+  output wire clk_level
 
   );
 

@@ -21,7 +21,8 @@ module DigitalQAMModulation(
 
 ClockGen ClockGen(
   .clk(clk),
-  .clk_m(clk_m)
+  .clk_m(clk_m),
+  .clk_level(clk_level)
   );
 
 m_alignment m_gen(
