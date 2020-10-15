@@ -13,6 +13,9 @@ wire [2:0] A_reg;
 wire [1:0] SigI;
 wire [1:0] SigQ;
 
+wire [2:0] Siga;
+wire [2:0] Sigb;
+
 DigitalQAMModulation MainComp(
   .clk(clk),
   .rst(rst),
@@ -20,7 +23,9 @@ DigitalQAMModulation MainComp(
   .m_align(m_align),
   .A_reg(A_reg),
   .SigI(SigI),
-  .SigQ(SigQ)
+  .SigQ(SigQ),
+  .Siga(Siga),
+  .Sigb(Sigb)
   
   );
 

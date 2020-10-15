@@ -3,12 +3,16 @@ module DigitalQAMModulation(
   input wire rst,
 
   output wire clk_m,
+  output wire clk_level,
 
   output wire m_align,
   output wire [2:0] A_reg,
 
   output wire [1:0] SigI,
-  output wire [1:0] SigQ
+  output wire [1:0] SigQ,
+
+  output wire [2:0] Siga,
+  output wire [2:0] Sigb
 
   );
 
@@ -33,6 +37,20 @@ Serial2Parallel Serial2Parallel(
   .srl(m_align),
   .ParaSig1(SigI),
   .ParaSig2(SigQ)
+  );
+
+LevelTransfer LevelTransferI(
+  .clk(clk_level),
+  .rst(rst),
+  .InputSig(SigI),
+  .LevelSig(Siga)
+  );
+
+LevelTransfer LevelTransferQ(
+  .clk(clk_level),
+  .rst(rst),
+  .InputSig(SigQ),
+  .LevelSig(Sigb)
   );
 
 endmodule // DigitalQAMModulation
