@@ -7,34 +7,28 @@ module Serial2Parallel (
 
   );
 
-  reg [1:0] tmp1;
-  reg [1:0] tmp2;
+  reg [3:0] tmp;
   reg [1:0] count=0;
 
   always @ ( posedge clk or posedge rst ) begin
     if (rst) begin
-      tmp1 = 2'b00;
-      tmp2 = 2'b00;
+      tmp = 4'b0000;
       count = 0;
+      ParaSig1 = 2'b00;
+      ParaSig2 = 2'b00;
     end else begin
-      if (count == 0) begin
-        tmp1[1] = srl;
-        count = count + 1;
-      end else if (count == 1) begin
-        tmp2[1] = srl;
-        count = count + 1;
-      end else if (count == 2) begin
-        tmp1[0] = srl;
-        count = count + 1;
+      if (count == 3) begin
+        tmp[3] = srl;
+        ParaSig1[1] = tmp[3];
+        ParaSig1[0] = tmp[1];
+        ParaSig2[1] = tmp[2];
+        ParaSig2[0] = tmp[0];
+        count = 0;
       end else begin
-        tmp2[0] = srl;
+        tmp[count] = srl;
         count = count + 1;
       end
     end
   end
-
-  assign ParaSig1 = (tmp1);
-  assign ParaSig2 = (tmp2);
-
 
 endmodule // Serial2Parallel
