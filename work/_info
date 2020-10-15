@@ -19,16 +19,16 @@ n@_opt
 Z3 OL;O;10.7;67
 R0
 T_opt1
-!s110 1602769332
-VTokKjo^2<Q:5D95WNOoz:3
+!s110 1602780197
+Vz0c8A1:^;?<3ZF``1`W4>1
 04 9 4 work Testbench fast 0
-=1-309c238cc7e5-5f8851b4-113-1338
+=1-309c238cc7e5-5f887c24-3b2-5264
 R1
 R2
 n@_opt1
 R3
 vClockGen
-Z4 !s110 1602769327
+Z4 !s110 1602780194
 !i10b 1
 !s100 VXhO4EO7<9YFOAk7RTb9G3
 Ic[m_hOPk>_jXQb7kFllFM2
@@ -42,7 +42,7 @@ Z7 OL;L;10.7;67
 r1
 !s85 0
 31
-Z8 !s108 1602769327.000000
+Z8 !s108 1602780194.000000
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v|
 !i113 0
@@ -50,13 +50,13 @@ Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 n@clock@gen
 vDigitalQAMModulation
-R4
+Z10 !s110 1602780193
 !i10b 1
-!s100 lj9W7;X^J_7BJ^f:RLKWK1
-IkKIk;EY33PlegzU=j4F^l0
+!s100 `IlFm<eJin8akd7;9Dlff0
+IdGnSll>5HcNNAKo1:FzUc2
 R5
 R6
-Z10 w1602768478
+w1602771684
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
 L0 1
@@ -64,7 +64,7 @@ R7
 r1
 !s85 0
 31
-R8
+Z11 !s108 1602780193.000000
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v|
 !i113 0
@@ -72,13 +72,13 @@ R9
 R2
 n@digital@q@a@m@modulation
 vm_alignment
-R4
+R10
 !i10b 1
 !s100 N<U[0[MM6d2`6@dY8dJ[S1
 IZ1MKQPj5L=V<G<MXHmVMm2
 R5
 R6
-R10
+w1602768478
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v
 L0 1
@@ -86,20 +86,42 @@ R7
 r1
 !s85 0
 31
-R8
+R11
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v|
 !i113 0
 R9
 R2
+vSerial2Parallel
+R4
+!i10b 1
+!s100 EOEba1NfTUiGieBXZ[UzS0
+Ic[Mhm>gKNWXzojo6VkDbo3
+R5
+R6
+w1602780171
+8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v
+FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v|
+!i113 0
+R9
+R2
+n@serial2@parallel
 vTestbench
 R4
 !i10b 1
-!s100 lU_3Eh15;7nKf`ITJzQVQ1
-I?J3@zO2zaIJN`8<6hGW5@0
+!s100 eLoG<0J@HdJh=JRDO4NC50
+IPL4ObX;Fc4F<S]QkRBCT:2
 R5
 R6
-w1602768952
+w1602771566
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
 L0 4
@@ -107,7 +129,7 @@ R7
 r1
 !s85 0
 31
-R8
+R11
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v|
 !i113 0

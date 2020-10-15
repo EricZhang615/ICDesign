@@ -2,8 +2,8 @@ module Serial2Parallel (
   input clk,
   input rst,
   input srl,
-  output wire [1:0] ParaSig1,
-  output wire [1:0] ParaSig2
+  output reg [1:0] ParaSig1,
+  output reg [1:0] ParaSig2
 
   );
 
@@ -19,10 +19,10 @@ module Serial2Parallel (
     end else begin
       if (count == 3) begin
         tmp[3] = srl;
-        ParaSig1[1] = tmp[3];
-        ParaSig1[0] = tmp[1];
-        ParaSig2[1] = tmp[2];
-        ParaSig2[0] = tmp[0];
+        ParaSig1[1] = tmp[0];
+        ParaSig1[0] = tmp[2];
+        ParaSig2[1] = tmp[1];
+        ParaSig2[0] = tmp[3];
         count = 0;
       end else begin
         tmp[count] = srl;

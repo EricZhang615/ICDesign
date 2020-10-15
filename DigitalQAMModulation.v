@@ -8,7 +8,7 @@ module DigitalQAMModulation(
   output wire [2:0] A_reg,
 
   output wire [1:0] SigI,
-  output wire [1:0] SigQ,
+  output wire [1:0] SigQ
 
   );
 
@@ -33,6 +33,6 @@ Serial2Parallel Serial2Parallel(
   .srl(m_align),
   .ParaSig1(SigI),
   .ParaSig2(SigQ)
-  )
+  );
 
 endmodule // DigitalQAMModulation
