@@ -1,0 +1,8 @@
+|m_alignment
+clk => tmp[0].CLK
+clk => tmp[1].CLK
+clk => tmp[2].CLK
+rst => ~NO_FANOUT~
+m_align <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
