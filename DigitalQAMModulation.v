@@ -1,24 +1,28 @@
-`timescale 1us / 1us
+module DigitalQAMModulation(
+  input wire clk,
+  input wire rst,
 
+  output wire clk_m,
 
-module DigitalQAMModulation;
-reg clk;
-wire m_align;
+  output wire m_align,
+  output wire [2:0] A_reg
 
-m_alignment m_gen(
-  .clk(clk),
-  .m_align(m_align)
   );
 
-parameter timer = 1000;
 
-initial begin
-  clk = 1'b0;
-end
 
-always
-begin
-  #(timer / 2) clk =~ clk;
-end
+
+ClockGen ClockGen(
+  .clk(clk),
+  .clk_m(clk_m)
+  );
+
+m_alignment m_gen(
+  .clk(clk_m),
+  .rst(rst),
+  .m_align(m_align),
+  .A_reg(A_reg)
+  );
+
 
 endmodule // DigitalQAMModulation
