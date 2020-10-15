@@ -5,7 +5,10 @@ module DigitalQAMModulation(
   output wire clk_m,
 
   output wire m_align,
-  output wire [2:0] A_reg
+  output wire [2:0] A_reg,
+
+  output wire [1:0] SigI,
+  output wire [1:0] SigQ,
 
   );
 
@@ -24,5 +27,12 @@ m_alignment m_gen(
   .A_reg(A_reg)
   );
 
+Serial2Parallel Serial2Parallel(
+  .clk(clk_m),
+  .rst(rst),
+  .srl(m_align),
+  .ParaSig1(SigI),
+  .ParaSig2(SigQ)
+  )
 
 endmodule // DigitalQAMModulation
