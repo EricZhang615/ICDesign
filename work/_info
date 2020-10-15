@@ -7,56 +7,110 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/modeltech64_10.7/examples
+Z0 dC:/modeltech64_10.7/examples
 T_opt
 !s110 1602763340
 VdAc:`F?Y@Y>RAgo?9131<1
 04 20 4 work DigitalQAMModulation fast 0
 =1-309c238cc7e5-5f883a4c-192-4464
-o-quiet -auto_acc_if_foreign -work work +acc
-Z0 tCvgOpt 0
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
 n@_opt
-OL;O;10.7;67
-vDigitalQAMModulation
-Z1 !s110 1602763336
+Z3 OL;O;10.7;67
+R0
+T_opt1
+!s110 1602769332
+VTokKjo^2<Q:5D95WNOoz:3
+04 9 4 work Testbench fast 0
+=1-309c238cc7e5-5f8851b4-113-1338
+R1
+R2
+n@_opt1
+R3
+vClockGen
+Z4 !s110 1602769327
 !i10b 1
-!s100 b:Ga^R>]i3?K0RSl7Gi8N2
-I5lhaJXo30VNI9TT<7;OmN1
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign
-w1602763325
-8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
-FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
-L0 4
-Z4 OL;L;10.7;67
+!s100 VXhO4EO7<9YFOAk7RTb9G3
+Ic[m_hOPk>_jXQb7kFllFM2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign
+w1602769316
+8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v
+FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v
+L0 1
+Z7 OL;L;10.7;67
 r1
 !s85 0
 31
-Z5 !s108 1602763336.000000
+Z8 !s108 1602769327.000000
+!s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@clock@gen
+vDigitalQAMModulation
+R4
+!i10b 1
+!s100 lj9W7;X^J_7BJ^f:RLKWK1
+IkKIk;EY33PlegzU=j4F^l0
+R5
+R6
+Z10 w1602768478
+8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
+FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v|
 !i113 0
-Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R0
+R9
+R2
 n@digital@q@a@m@modulation
 vm_alignment
-R1
+R4
 !i10b 1
-!s100 CAcQSH8?8L9kn<lb:BokU2
-IXISndLIi=14b?RnETP8o_0
-R2
-R3
-w1602731947
+!s100 N<U[0[MM6d2`6@dY8dJ[S1
+IZ1MKQPj5L=V<G<MXHmVMm2
+R5
+R6
+R10
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v
 L0 1
-R4
+R7
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v|
 !i113 0
+R9
+R2
+vTestbench
+R4
+!i10b 1
+!s100 lU_3Eh15;7nKf`ITJzQVQ1
+I?J3@zO2zaIJN`8<6hGW5@0
+R5
 R6
-R0
+w1602768952
+8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
+FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
+L0 4
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v|
+!i113 0
+R9
+R2
+n@testbench

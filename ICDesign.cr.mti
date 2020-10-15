@@ -5,4 +5,18 @@ Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 Top level modules:
 	m_alignment
 
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module Testbench
+
+Top level modules:
+	Testbench
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module DigitalQAMModulation
+
+Top level modules:
+	DigitalQAMModulation
+
 } {} {}}
