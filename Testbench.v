@@ -7,6 +7,7 @@ reg rst;
 
 wire clk_m;
 wire clk_level;
+wire clk_CarryWave;
 
 wire m_align;
 wire [2:0] A_reg;
@@ -17,17 +18,24 @@ wire [1:0] SigQ;
 wire [2:0] Siga;
 wire [2:0] Sigb;
 
+wire [9:0] SinWave;
+wire [9:0] CosWave;
+
+
 DigitalQAMModulation MainComp(
   .clk(clk),
   .rst(rst),
   .clk_m(clk_m),
   .clk_level(clk_level),
+  .clk_CarryWave(clk_CarryWave),
   .m_align(m_align),
   .A_reg(A_reg),
   .SigI(SigI),
   .SigQ(SigQ),
   .Siga(Siga),
   .Sigb(Sigb)
+  .SinWave(SinWave),
+  .CosWave(CosWave)
 
   );
 

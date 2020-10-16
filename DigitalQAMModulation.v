@@ -4,6 +4,7 @@ module DigitalQAMModulation(
 
   output wire clk_m,
   output wire clk_level,
+  output wire clk_CarryWave,
 
   output wire m_align,
   output wire [2:0] A_reg,
@@ -12,17 +13,18 @@ module DigitalQAMModulation(
   output wire [1:0] SigQ,
 
   output wire [2:0] Siga,
-  output wire [2:0] Sigb
+  output wire [2:0] Sigb,
+
+  output wire [9:0] SinWave,
+  output wire [9:0] CosWave
 
   );
-
-
-
 
 ClockGen ClockGen(
   .clk(clk),
   .clk_m(clk_m),
-  .clk_level(clk_level)
+  .clk_level(clk_level),
+  .clk_CarryWave(clk_CarryWave)
   );
 
 m_alignment m_gen(
@@ -52,6 +54,13 @@ LevelTransfer LevelTransferQ(
   .rst(rst),
   .InputSig(SigQ),
   .LevelSig(Sigb)
+  );
+
+CarryWaveGen CarryWaveGen(
+  .clk(clk_CarryWave),
+  .rst(rst),
+  .SinWave(SinWave),
+  .CosWave(CosWave)
   );
 
 endmodule // DigitalQAMModulation
