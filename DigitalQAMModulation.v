@@ -19,7 +19,9 @@ module DigitalQAMModulation(
   output wire [9:0] CosWave,
 
   output wire [12:0] I_mod,
-  output wire [12:0] Q_mod
+  output wire [12:0] Q_mod,
+
+  output wire [12:0] qam
 
   );
 
@@ -78,6 +80,13 @@ ASK ASK_Q(
   .CarryWave(SinWave),
   .BaseSig(Sigb),
   .Modulated(Q_mod)
+  );
+
+AddModule AddModule(
+  .rst(rst),
+  .posInput(I_mod),
+  .negInput(Q_mod),
+  .result(qam)
   );
 
 endmodule // DigitalQAMModulation

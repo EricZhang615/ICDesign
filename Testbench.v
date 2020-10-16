@@ -24,6 +24,8 @@ wire [9:0] CosWave;
 wire [12:0] I_mod;
 wire [12:0] Q_mod;
 
+wire [12:0] qam;
+
 
 
 DigitalQAMModulation MainComp(
@@ -41,7 +43,8 @@ DigitalQAMModulation MainComp(
   .SinWave(SinWave),
   .CosWave(CosWave),
   .I_mod(I_mod),
-  .Q_mod(Q_mod)
+  .Q_mod(Q_mod),
+  .qam(qam)
 
   );
 
