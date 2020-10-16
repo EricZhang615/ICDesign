@@ -18,8 +18,8 @@ module DigitalQAMModulation(
   output wire [9:0] SinWave,
   output wire [9:0] CosWave,
 
-  output wire [10:0] I_mod,
-  output wire [10:0] Q_mod
+  output wire [12:0] I_mod,
+  output wire [12:0] Q_mod
 
   );
 

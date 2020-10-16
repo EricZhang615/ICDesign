@@ -21,8 +21,8 @@ wire [2:0] Sigb;
 wire [9:0] SinWave;
 wire [9:0] CosWave;
 
-wire [10:0] I_mod;
-wire [10:0] Q_mod;
+wire [12:0] I_mod;
+wire [12:0] Q_mod;
 
 
 
