@@ -33,7 +33,7 @@ DigitalQAMModulation MainComp(
   .SigI(SigI),
   .SigQ(SigQ),
   .Siga(Siga),
-  .Sigb(Sigb)
+  .Sigb(Sigb),
   .SinWave(SinWave),
   .CosWave(CosWave)
 

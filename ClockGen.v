@@ -39,7 +39,7 @@ module ClockGen (
   reg clk1=0;
   reg clk2=0;
 
-  reg clk_CW_tmp=0;
+  wire clk_CW_tmp=0;
 
   assign clk_CarryWave = (clk_CW_tmp);
 

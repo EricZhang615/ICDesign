@@ -19,56 +19,78 @@ n@_opt
 Z3 OL;O;10.7;67
 R0
 T_opt1
-!s110 1602782467
-VCMT?5hL;QEJ1[0hi9Sjf<0
+!s110 1602819815
+V>:Y66N@54Y@CjAd:DO3:<1
 04 9 4 work Testbench fast 0
-=1-309c238cc7e5-5f888503-2f9-1ebc
+=1-309c238cc7e5-5f8916e6-2f2-3234
 R1
 R2
 n@_opt1
 R3
-vClockGen
-Z4 !s110 1602782464
+vCarryWaveGen
+Z4 !s110 1602819809
 !i10b 1
-!s100 :^CAK6HNbaW_`fkMIh^zS1
-Ih:35gU`RVLL]EA2Nkh`PQ1
+!s100 ]NXi^NmSQOh1J=2c2l>f60
+IMUTTIQUD5g:6H=Y6g[1VW2
 Z5 VDg1SIo80bB@j0V0VzS_@n1
 Z6 dC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign
-w1602781967
+Z7 w1602819623
+8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v
+FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v
+L0 1
+Z8 OL;L;10.7;67
+r1
+!s85 0
+31
+Z9 !s108 1602819809.000000
+!s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@carry@wave@gen
+vClockGen
+R4
+!i10b 1
+!s100 oJ75;P>XG>SjOUfm_a8A;0
+IP748WGB5hBnjRAMaGMNMJ2
+R5
+R6
+w1602819785
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v
 L0 1
-Z7 OL;L;10.7;67
+R8
 r1
 !s85 0
 31
-Z8 !s108 1602782464.000000
+R9
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v|
 !i113 0
-Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R10
 R2
 n@clock@gen
 vDigitalQAMModulation
-R4
+Z11 !s110 1602819808
 !i10b 1
-!s100 STDUV=jBJXU=K?BK:I:hT1
-I^LjeKkYlJ``z75WEL0bai0
+!s100 oGhk>D9C4d?[c:XGdkCn<0
+IA_oPI=BACA=V?B8j89QG:3
 R5
 R6
-w1602782450
+R7
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
 L0 1
-R7
+R8
 r1
 !s85 0
 31
-Z10 !s108 1602782463.000000
+Z12 !s108 1602819808.000000
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v|
 !i113 0
-R9
+R10
 R2
 n@digital@q@a@m@modulation
 vLevelTransfer
@@ -82,19 +104,19 @@ w1602781897
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v
 L0 1
-R7
+R8
 r1
 !s85 0
 31
-R8
+R9
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v|
 !i113 0
-R9
+R10
 R2
 n@level@transfer
 vm_alignment
-!s110 1602782463
+R11
 !i10b 1
 !s100 N<U[0[MM6d2`6@dY8dJ[S1
 IZ1MKQPj5L=V<G<MXHmVMm2
@@ -104,15 +126,15 @@ w1602768478
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v
 L0 1
-R7
+R8
 r1
 !s85 0
 31
-R10
+R12
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v|
 !i113 0
-R9
+R10
 R2
 vSerial2Parallel
 R4
@@ -125,36 +147,36 @@ w1602780290
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v
 L0 1
-R7
+R8
 r1
 !s85 0
 31
-R8
+R9
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v|
 !i113 0
-R9
+R10
 R2
 n@serial2@parallel
 vTestbench
 R4
 !i10b 1
-!s100 Uz_k:7cA[[CBIBW>A9eiE3
-I@h[33TbnC>Oe`1fYgJIRP3
+!s100 308AnzidgLjmTZMEGLFc]0
+IO0Y:I>FX=kAi]6z5>=ez^3
 R5
 R6
-w1602782108
+w1602819805
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
 L0 4
-R7
+R8
 r1
 !s85 0
 31
-R8
+R12
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v|
 !i113 0
-R9
+R10
 R2
 n@testbench
