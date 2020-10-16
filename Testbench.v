@@ -21,6 +21,10 @@ wire [2:0] Sigb;
 wire [9:0] SinWave;
 wire [9:0] CosWave;
 
+wire [10:0] I_mod;
+wire [10:0] Q_mod;
+
+
 
 DigitalQAMModulation MainComp(
   .clk(clk),
@@ -35,7 +39,9 @@ DigitalQAMModulation MainComp(
   .Siga(Siga),
   .Sigb(Sigb),
   .SinWave(SinWave),
-  .CosWave(CosWave)
+  .CosWave(CosWave),
+  .I_mod(I_mod),
+  .Q_mod(Q_mod)
 
   );
 

@@ -16,7 +16,10 @@ module DigitalQAMModulation(
   output wire [2:0] Sigb,
 
   output wire [9:0] SinWave,
-  output wire [9:0] CosWave
+  output wire [9:0] CosWave,
+
+  output wire [10:0] I_mod,
+  output wire [10:0] Q_mod
 
   );
 
@@ -61,6 +64,20 @@ CarryWaveGen CarryWaveGen(
   .rst(rst),
   .SinWave(SinWave),
   .CosWave(CosWave)
+  );
+
+ASK ASK_I(
+  .rst(rst),
+  .CarryWave(CosWave),
+  .BaseSig(Siga),
+  .Modulated(I_mod)
+  );
+
+ASK ASK_Q(
+  .rst(rst),
+  .CarryWave(SinWave),
+  .BaseSig(Sigb),
+  .Modulated(Q_mod)
   );
 
 endmodule // DigitalQAMModulation
