@@ -34,9 +34,9 @@ module ASK (
   assign CW_abs = (CW_sign) ? (~CarryWave + 1) : CarryWave;
   assign BS_abs = (BS_sign) ? (~BaseSig + 1) : BaseSig;
 
-  assign product_abs_tmp1[9:0] = (BS_abs[0]) ? CW_abs : 10'b0000000000;
-  assign product_abs_tmp2[10:1] = (BS_abs[1]) ? CW_abs : 10'b0000000000;
-  assign product_abs_tmp3[11:2] = (BS_abs[2]) ? CW_abs : 10'b0000000000;
+  assign product_abs_tmp1 = (BS_abs[0]) ? {3'b000,CW_abs[9:0]} : 13'b0000000000000;
+  assign product_abs_tmp2 = (BS_abs[1]) ? {2'b00,CW_abs[9:0],1'b0} : 13'b0000000000000;
+  assign product_abs_tmp3 = (BS_abs[2]) ? {1'b0,CW_abs,2'b00} : 13'b0000000000000;
 
   assign product_abs = (product_abs_tmp1 + product_abs_tmp2 + product_abs_tmp3);
 

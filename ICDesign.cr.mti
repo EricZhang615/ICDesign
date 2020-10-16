@@ -12,11 +12,39 @@ Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 Top level modules:
 	Serial2Parallel
 
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module Testbench
+
+Top level modules:
+	Testbench
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module DigitalQAMModulation
+
+Top level modules:
+	DigitalQAMModulation
+
 } {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 -- Compiling module LevelTransfer
 
 Top level modules:
 	LevelTransfer
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module CarryWaveGen
+
+Top level modules:
+	CarryWaveGen
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module ClockGen
+
+Top level modules:
+	ClockGen
 
 } {} {}}
