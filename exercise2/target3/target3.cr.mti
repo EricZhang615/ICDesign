@@ -1,0 +1,29 @@
+C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/TOP2.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/TOP2.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module TOP3
+
+Top level modules:
+	TOP3
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/StateMachine.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/StateMachine.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module StateMachine
+
+Top level modules:
+	StateMachine
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/ClockGen4.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/ClockGen4.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module ClockGen4
+
+Top level modules:
+	ClockGen4
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/Testbench.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target3/Testbench.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module Testbench
+
+Top level modules:
+	Testbench
+
+} {} {}}
