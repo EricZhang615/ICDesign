@@ -8,7 +8,7 @@ module StateMachine (
 
   output wire [2:0] state_o,
   output reg rst_cs,
-  output wire clk_cs
+  output wire clk_cs,
   output reg cs_o=1,
   output reg da_cs=0
 
@@ -29,7 +29,7 @@ module StateMachine (
   reg [1:0] clkCount2=2'b00;
 
   reg [4:0] clkCount3=5'b00000;
-  reg [15:0] DataAddr=8'b1010110011110000;
+  reg [15:0] DataAddr=16'b1010110011110000;
 
   reg [2:0] clkCount4=3'b000;
 
@@ -93,7 +93,7 @@ module StateMachine (
                   if (flag_cs == 0) begin
                     NextState = 3'b010;
                   end else begin
-                    if (sync == 2'b00) begin
+                    if (sync == 2'b11) begin
                       if (clkCount3 == 5'b00000) begin
                         cs_o = 0;
                         clkCount3 = clkCount3 + 1;
@@ -105,6 +105,7 @@ module StateMachine (
                       end else begin
                         clkCount3 = clkCount3 + 1;
                         NextState = 3'b011;
+                      end
                     end else begin
                       NextState = 3'b011;
                     end
