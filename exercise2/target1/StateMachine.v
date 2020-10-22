@@ -34,7 +34,6 @@ module StateMachine (
                 NextState = 3'b000;
               end else begin
                 if (clkCount1 == 3'b100) begin
-                  rst_cs = 0;
                   clkCount1 = 3'b000;
                   NextState = 3'b001;
                 end else begin
@@ -50,6 +49,7 @@ module StateMachine (
                   clk_4_switch = 0;
                   NextState = 3'b000;
                 end else begin
+                  rst_cs = 0;
                   clk_4_switch = 1;
                   NextState = 3'b010;
                 end
@@ -71,6 +71,7 @@ module StateMachine (
                     clkCount2 = clkCount2 + 1;
                     NextState = 3'b010;
                   end
+                end
               end
       3'b011: begin
                 if (rst == 1) begin

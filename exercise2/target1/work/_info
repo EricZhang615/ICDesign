@@ -7,101 +7,111 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign
+Z0 dC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign
 T_opt
-!s110 1603370757
-VY<Rho5L?UKlFi><86U_872
-04 9 4 work Testbench fast 0
-=1-309c238cc7e5-5f917f05-1bf-7ec
+!s110 1603373288
+Vnz73KaoKB`YL?S=;8S<G50
+Z1 04 9 4 work Testbench fast 0
+=1-309c238cc7e5-5f9188e7-3a6-5b78
 o-quiet -auto_acc_if_foreign -work work +acc
-Z0 tCvgOpt 0
+Z2 tCvgOpt 0
 n@_opt
-OL;O;10.7;67
+Z3 OL;O;10.7;67
+T_opt1
+!s110 1603372664
+VcM:a66:8g]21AXlGK6;2b1
+R1
+=1-309c238cc7e5-5f918678-1e6-68c
+o-quiet -auto_acc_if_foreign -work work
+R2
+n@_opt1
+R3
+R0
 vClockGen4
-Z1 !s110 1603370751
+Z4 !s110 1603373283
 !i10b 1
 !s100 LQAcn[;Z3dg>oYTRIRbG52
 I:Z2BAF4B3LDMVgRhTE^j]3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1
-Z4 w1603369869
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1
+Z7 w1603369869
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/ClockGen4.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/ClockGen4.v
 L0 1
-Z5 OL;L;10.7;67
+Z8 OL;L;10.7;67
 r1
 !s85 0
 31
-Z6 !s108 1603370751.000000
+Z9 !s108 1603373283.000000
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/ClockGen4.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/ClockGen4.v|
 !i113 0
-Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
 n@clock@gen4
 vStateMachine
-R1
+R4
 !i10b 1
-!s100 kiK0jk>:FzlVhE:>@UPj11
-I][iiVHa_XcKeAb]aE1D?f3
-R2
-R3
-w1603370745
+!s100 d3D;<KoZYnA6BaJTNOjKT1
+Ih?M[N[B8K5iZ4L4<M`H:61
+R5
+R6
+w1603372649
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/StateMachine.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/StateMachine.v
 L0 1
-R5
+R8
 r1
 !s85 0
 31
-R6
+R9
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/StateMachine.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/StateMachine.v|
 !i113 0
-R7
-R0
+R10
+R2
 n@state@machine
 vTestbench
-Z8 !s110 1603370752
-!i10b 1
-!s100 4k6@:mMd266B`=z5T=kGj0
-I:CP=PC]D9[ThV]S<W;YI12
-R2
-R3
 R4
+!i10b 1
+!s100 cP=CIg6NSS5=6eeiEL[P21
+I@H;USMId?c46@kEzY=[Te1
+R5
+R6
+w1603373277
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/Testbench.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/Testbench.v
 L0 3
-R5
+R8
 r1
 !s85 0
 31
-R6
+R9
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/Testbench.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/Testbench.v|
 !i113 0
-R7
-R0
+R10
+R2
 n@testbench
 vTOP1
-R8
+R4
 !i10b 1
 !s100 HOC4bXZJQedX0kOn`Hzd83
 Ik`WU4mL0DKi;Z2`;J7GPa1
-R2
-R3
-R4
+R5
+R6
+R7
 8C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/TOP1.v
 FC:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/TOP1.v
 L0 1
-R5
+R8
 r1
 !s85 0
 31
-!s108 1603370752.000000
+R9
 !s107 C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/TOP1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/exercise2/target1/TOP1.v|
 !i113 0
-R7
-R0
+R10
+R2
 n@t@o@p1

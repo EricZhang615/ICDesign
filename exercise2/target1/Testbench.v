@@ -23,12 +23,20 @@ TOP1 TOP(
   parameter timer = 10;
 
   initial begin
-    clk = 0;
+    clk = 1;
     rst = 0;
+    we_en = 0;
+    flag_cs = 0;
     // #850000
     // rst = 1;
     // #1000
     // rst = 0;
+    #100
+    we_en = 1;
+    flag_cs = 1;
+    #150
+    flag_cs = 0;
+
 
   end
 
