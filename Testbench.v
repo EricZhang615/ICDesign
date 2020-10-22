@@ -54,10 +54,10 @@ parameter timer = 2;
 initial begin
   clk = 0;
   rst = 0;
-  // #850000
-  // rst = 1;
-  // #1000
-  // rst = 0;
+  #20000
+  rst = 1;
+  #1000
+  rst = 0;
 
 end
 

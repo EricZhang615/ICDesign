@@ -26,7 +26,7 @@ module StateMachine (
   reg [1:0] clkCount2=2'b00;
 
 
-  always @ ( CurrentState or posedge rst or clkCount1 or clkCount2 ) begin
+  always @ ( CurrentState or posedge rst ) begin
     case (CurrentState)
       3'b000:begin
               if (rst == 1) begin
@@ -67,7 +67,7 @@ module StateMachine (
                   NextState = 3'b000;
                 end else begin
                   if (TransmitSig2 == 1) begin
-                    if (clkCount2 == 2'11) begin
+                    if (clkCount2 == 2'b11) begin
                       TransmitSig2 = 0;
                       if (we_en == 1) begin
                         NextState = 3'b011;
@@ -78,7 +78,7 @@ module StateMachine (
                       NextState = 3'b010;
                     end
                   end else begin
-                    TransmitSig2 == 1;
+                    TransmitSig2 = 1;
                     NextState = 3'b010;
                   end
                 end
@@ -105,7 +105,7 @@ module StateMachine (
   end
 
   always @ ( TransmitSig1 or posedge clk ) begin
-    if (TransmitSig1 = 1) begin
+    if (TransmitSig1 == 1) begin
       clkCount1 = clkCount1 + 1;
     end else begin
       clkCount1 = 3'b000;
@@ -113,7 +113,7 @@ module StateMachine (
   end
 
   always @ ( TransmitSig2 or posedge clk ) begin
-    if (TransmitSig2 = 1) begin
+    if (TransmitSig2 == 1) begin
       clkCount2 = clkCount2 + 1;
     end else begin
       clkCount2 = 2'b00;

@@ -1,9 +1,9 @@
-C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ASK.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ASK.v
+C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
--- Compiling module ASK
+-- Compiling module Serial2Parallel
 
 Top level modules:
-	ASK
+	Serial2Parallel
 
 } {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/m_alignment.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
@@ -12,12 +12,19 @@ Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 Top level modules:
 	m_alignment
 
-} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Serial2Parallel.v
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ASK.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ASK.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
--- Compiling module Serial2Parallel
+-- Compiling module ASK
 
 Top level modules:
-	Serial2Parallel
+	ASK
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/AddModule.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/AddModule.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module AddModule
+
+Top level modules:
+	AddModule
 
 } {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/Testbench.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
@@ -26,13 +33,6 @@ Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 Top level modules:
 	Testbench
 
-} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
-Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
--- Compiling module DigitalQAMModulation
-
-Top level modules:
-	DigitalQAMModulation
-
 } {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/LevelTransfer.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 -- Compiling module LevelTransfer
@@ -40,12 +40,12 @@ Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 Top level modules:
 	LevelTransfer
 
-} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/DigitalQAMModulation.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
--- Compiling module CarryWaveGen
+-- Compiling module DigitalQAMModulation
 
 Top level modules:
-	CarryWaveGen
+	DigitalQAMModulation
 
 } {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/ClockGen.v
 Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
@@ -53,5 +53,12 @@ Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
 
 Top level modules:
 	ClockGen
+
+} {} {}} C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v {1 {vlog -work work -vopt -stats=none C:/Users/1/Desktop/documents/DigitalExperiments/ICDesign/CarryWaveGen.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module CarryWaveGen
+
+Top level modules:
+	CarryWaveGen
 
 } {} {}}
