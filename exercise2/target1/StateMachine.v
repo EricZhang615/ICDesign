@@ -16,34 +16,30 @@ module StateMachine (
   assign state_o = (CurrentState);
 
 
-  reg TransmitSig1=0;
+  //reg TransmitSig1=0;
   reg [2:0] clkCount1=3'b000;
 
   reg clk_4_switch=0;
   assign clk_cs = (clk_4_switch & clk_4);
 
-  reg TransmitSig2=0;
+  //reg TransmitSig2=0;
   reg [1:0] clkCount2=2'b00;
 
 
-  always @ ( CurrentState or posedge rst ) begin
+  always @ ( CurrentState or posedge clk or rst) begin
     case (CurrentState)
       3'b000:begin
               if (rst == 1) begin
-                TransmitSig1 = 0;
                 rst_cs = 1;
                 NextState = 3'b000;
               end else begin
-                if (TransmitSig1 == 1) begin
-                  if (clkCount1 == 3'b101) begin
-                    TransmitSig1 = 0;
-                    NextState = 3'b001;
-                  end else begin
-                    NextState = 3'b000;
-                  end
+                if (clkCount1 == 3'b100) begin
+                  rst_cs = 0;
+                  clkCount1 = 3'b000;
+                  NextState = 3'b001;
                 end else begin
-                  TransmitSig1 = 1;
                   rst_cs = 1;
+                  clkCount1 = clkCount1 + 1;
                   NextState = 3'b000;
                 end
               end
@@ -54,7 +50,6 @@ module StateMachine (
                   clk_4_switch = 0;
                   NextState = 3'b000;
                 end else begin
-                  rst_cs = 0;
                   clk_4_switch = 1;
                   NextState = 3'b010;
                 end
@@ -63,25 +58,19 @@ module StateMachine (
                 if (rst == 1) begin
                   rst_cs = 1;
                   clk_4_switch = 0;
-                  TransmitSig2 = 0;
                   NextState = 3'b000;
                 end else begin
-                  if (TransmitSig2 == 1) begin
-                    if (clkCount2 == 2'b11) begin
-                      TransmitSig2 = 0;
-                      if (we_en == 1) begin
-                        NextState = 3'b011;
-                      end else begin
-                        NextState = 3'b010;
-                      end
+                  if (clkCount2 == 2'b10) begin
+                    if (we_en == 1) begin
+                      clkCount2 = 2'b00;
+                      NextState = 3'b011;
                     end else begin
                       NextState = 3'b010;
                     end
                   end else begin
-                    TransmitSig2 = 1;
+                    clkCount2 = clkCount2 + 1;
                     NextState = 3'b010;
                   end
-                end
               end
       3'b011: begin
                 if (rst == 1) begin
@@ -104,6 +93,7 @@ module StateMachine (
     CurrentState = NextState;
   end
 
+  /*
   always @ ( TransmitSig1 or posedge clk ) begin
     if (TransmitSig1 == 1) begin
       clkCount1 = clkCount1 + 1;
@@ -119,5 +109,6 @@ module StateMachine (
       clkCount2 = 2'b00;
     end
   end
+  */
 
 endmodule // StateMachine
